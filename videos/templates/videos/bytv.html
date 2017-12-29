@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+
+	{% load staticfiles %}
+
+	<style>
+			  * {
+					padding: 0;
+					margin: 0;
+			  	}
+			  .fit { /* set relative picture size */
+				max-width: 100vw;
+				max-height: 100vh;
+			  	}
+			  .center {
+				display: block;
+				margin: auto;
+			  	}
+			  	video#homevideo {
+				position: fixed; right: 0; bottom: 0;
+				min-width: 100%; min-height: 100%;
+				width: auto; height: auto; z-index: -100;
+				background-size: cover;
+				}
+
+	</style>
+	
+</head>
+<body onload="onload();">
+	<div>
+		<video playsinline controls autoplay muted id="homevideo" onended="onVideoEnded();">
+    	<!--<source src="{% static 'videos/video/videoplay1.mp4' %}" type='video/mp4' />-->
+		</video>
+	</div>
+
+
+	<script src="{% static 'videos/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'videos/js/bytv.js' %}"></script>
+</body>	
+</html>
