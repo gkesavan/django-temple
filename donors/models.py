@@ -2,7 +2,6 @@ from django.db import models
 from django.db.models.signals import pre_delete
 from django.dispatch.dispatcher import receiver
 
-
 class details(models.Model):
     display_name  = models.CharField(max_length = 150)
     display_from  = models.DateField()
@@ -13,3 +12,4 @@ class details(models.Model):
 def mymodel_delete(sender, instance, **kwargs):
     # Pass false so FileField doesn't save the model.
     instance.file_path.delete(False)
+# Create your models here.
