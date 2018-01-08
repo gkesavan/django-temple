@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'donors/styles.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+</head>
+<body>
+     <div class="container">
+        <h1> Today Anandana Donors </h1>
+     </div>
+    <div class="jumbotron">
+    <table class="table table-striped">
+     <TH class="thead-light">
+    {% for d in donors %}
+    <TR>
+
+
+        <TD ><SPAN>{{ d.name }}</SPAN></TD>
+    </TR>
+    {% endfor %}
+     </TH>
+    </table>
+      <!--  <p> {{ donors }} </p>-->
+    </div>
+
+</body>
+</html>

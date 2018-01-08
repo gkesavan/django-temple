@@ -24,7 +24,7 @@ admin.site.site_title  = "Shiva Vishnu Temple"
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^temple/', include('videos.urls')),
-    url(r'^temple/', include('donors.urls'))
+    url(r'^donors/', include('donors.urls'))
 ]
 
 

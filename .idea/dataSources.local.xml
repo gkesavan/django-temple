@@ -5,13 +5,6 @@
       <database-info product="SQLite" version="3.16.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <auth-required>false</auth-required>
-      <introspection-schemas>*:main</introspection-schemas>
-    </data-source>
-    <data-source name="db.sqlite3" uuid="ba911212-f73b-488f-a92b-d3f7bb4be4b1">
-      <database-info product="SQLite" version="3.16.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <secret-storage>master_key</secret-storage>
-      <auth-required>false</auth-required>
       <introspection-schemas>*:*</introspection-schemas>
     </data-source>
   </component>
